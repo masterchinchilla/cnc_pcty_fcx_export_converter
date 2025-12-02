@@ -1,10 +1,44 @@
-th {
-  border:solid 1px black;
-  font-weight: bold;
-};
-td {
-  border:solid 1px black;
-};
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 table{
   border-collapse:collapse;
+}
+th, td{
+  border:solid 1px black;
+  padding:4px;
+}
+th {
+  font-weight: bold
+}
+td {
+}
+.redTextCntrdCells{
+  color:rgb(230, 68, 68);
+  text-align: center;
+  vertical-align: center;
+}
+.lightBlueFilledCell{
+  background-color: #ddebf7;
+}
+.yellowHghlghtFilledCell{
+  background-color: #ffff00;
+}
+.lightGreenFilledCell{
+  background-color: #c6e0b4;
+}
+.lightPurpleFilledCell{
+  background-color: #bcbce8;
+}
+.medBlueFilledCell{
+  background-color: #9bc2e6;
+}
+.lightOrangeFilledCell{
+  background-color: #fce4d6;
+}
+.medGreyFilledCell{
+  background-color: #bfbfbf;
+}
+.lightGreyFilledCell{
+  background-color: #d9d9d9;
 }
