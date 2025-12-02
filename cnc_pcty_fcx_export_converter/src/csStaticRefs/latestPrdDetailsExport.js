@@ -1,0 +1,953 @@
+const latestPrdDetailsExportArry=[
+  {
+    empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "7.5",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "AP0201A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/14/25",
+    stateStr: "NY"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "7.5",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.5",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "4.54",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "2.96",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.17",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    extrnlCodeStr: "AP0202A_HrlyPWR",
+    hrsFloat: "7.83",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    extrnlCodeStr: "AP0301A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.7",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "7.3",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/14/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    extrnlCodeStr: "IN_PWO",
+    hrsFloat: "0.9",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.3",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.14",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "AP0201A_HrlyPWR",
+    hrsFloat: "7.56",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.93",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "1.95",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.62",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "2.25",
+    qtyFloat: "",
+    taxCodeStr: "Sacramento",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.27",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2511-ShaneBrown-DAVIS SR AQUATICS CENTER-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "1.98",
+    qtyFloat: "",
+    taxCodeStr: "Yolo",
+    bpNameStr: "2511-ShaneBrown-DAVIS SR AQUATICS CENTER-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.1",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "7.9",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "OT - Overtime",
+    hrsFloat: "0.01",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.12",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "4.05",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "3.83",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    extrnlCodeStr: "AP0202A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.07",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2511-ShaneBrown-DAVIS SR AQUATICS CENTER-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.11",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2511-ShaneBrown-DAVIS SR AQUATICS CENTER-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "2.08",
+    qtyFloat: "",
+    taxCodeStr: "Yolo",
+    bpNameStr: "2511-ShaneBrown-DAVIS SR AQUATICS CENTER-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.96",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "1.41",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.42",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "2.29",
+    qtyFloat: "",
+    taxCodeStr: "Sacramento",
+    bpNameStr: "2512-Gray-HAGGINWOOD ES KITCHEN MODERNIZATION-K12BUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.21",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "0.45",
+    qtyFloat: "",
+    taxCodeStr: "Yuba",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.71",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    extrnlCodeStr: "AP0102B_HrlyPWR",
+    hrsFloat: "7.29",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    extrnlCodeStr: "AP0301A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/13/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    extrnlCodeStr: "AP0102B_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Andrew Lloyd Hedenland (WK1011)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.28",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.14",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "AP0201A_HrlyPWR",
+    hrsFloat: "7.58",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "4.75",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "3.25",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jamie Andres Godoy (WK1006)",
+    extrnlCodeStr: "IW_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.28",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.14",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "7.58",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.18",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "7.82",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    extrnlCodeStr: "AP0102B_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    extrnlCodeStr: "AP0301A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/12/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    extrnlCodeStr: "HOL - Holiday",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/11/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    extrnlCodeStr: "AP0102B_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Andrew Lloyd Hedenland (WK1011)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Sacramento",
+    bpNameStr: "255-Collins-GRANT HIGH SCHOOL - GYM AND LOCKERS-K12BUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Christopher Lee Coffelt (WK1003)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dan Reno Soucy (WK1014)",
+    extrnlCodeStr: "AP0201A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jamie Andres Godoy (WK1006)",
+    extrnlCodeStr: "IW_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "El Dorado",
+    bpNameStr: "2510-SacValley-CCC GREENWOOD-STBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    extrnlCodeStr: "VAC - Vacation",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Jason Turner Hanley (WK1010)",
+    extrnlCodeStr: "SICK",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "221-Company-CNCHQ-305253",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "0.09",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "John Edward Carson (WK1002)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "7.91",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "1.23",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    extrnlCodeStr: "IN_PWR",
+    hrsFloat: "6.77",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "2.34",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "256-Gray-FOLSOM LAKE COLLEGE - NEW SCIENCE BUILDING-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "0.75",
+    qtyFloat: "",
+    taxCodeStr: "Sacramento",
+    bpNameStr: "256-Gray-FOLSOM LAKE COLLEGE - NEW SCIENCE BUILDING-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "OT - Overtime",
+    hrsFloat: "0.01",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "4.91",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    extrnlCodeStr: "AP0202A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Sacramento",
+    bpNameStr: "255-Collins-GRANT HIGH SCHOOL - GYM AND LOCKERS-K12BUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Scott Daniel Tope (WK1016)",
+    extrnlCodeStr: "REG - Regular",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "2516-Royal-USDA ARS R AND D CENTER - DAVIS-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    extrnlCodeStr: "AP0102B_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    extrnlCodeStr: "AP0301A_HrlyPWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "254-Royal-CSUS STANISLAUS - ACACIA HALL-HEdBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    extrnlCodeStr: "Tech_PWR",
+    hrsFloat: "8",
+    qtyFloat: "",
+    taxCodeStr: "Stanislaus",
+    bpNameStr: "253-PaulDurham-FRENCH CAMP - LIVERMORE VA-FEDBUILD",
+    dateStr: "11/10/25",
+    stateStr: "CA"
+  },
+  {
+    empFullNameStr: "",
+    extrnlCodeStr: "",
+    hrsFloat: "463.92",
+    qtyFloat: "",
+    taxCodeStr: "",
+    bpNameStr: "",
+    dateStr: "",
+    stateStr: ""
+  }
+]
+export default latestPrdDetailsExportArry;

@@ -1,0 +1,10 @@
+th {
+  border:solid 1px black;
+  font-weight: bold;
+};
+td {
+  border:solid 1px black;
+};
+table{
+  border-collapse:collapse;
+}
