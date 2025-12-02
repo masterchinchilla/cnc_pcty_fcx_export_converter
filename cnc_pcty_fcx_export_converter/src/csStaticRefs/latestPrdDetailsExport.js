@@ -1,6 +1,7 @@
 const latestPrdDetailsExportArry=[
   {
     empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    empIDStr: "WK1012",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -11,6 +12,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    empIDStr: "WK1009",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "7.5",
     qtyFloat: "",
@@ -21,6 +23,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "AP0201A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -31,6 +34,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    empIDStr: "WK1015",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -41,6 +45,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "8",
     qtyFloat: "",
@@ -51,6 +56,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -61,6 +67,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "7.5",
     qtyFloat: "",
@@ -71,6 +78,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.5",
     qtyFloat: "",
@@ -81,6 +89,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "4.54",
     qtyFloat: "",
@@ -91,6 +100,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "2.96",
     qtyFloat: "",
@@ -101,6 +111,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    empIDStr: "WK1000",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.17",
     qtyFloat: "",
@@ -111,6 +122,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    empIDStr: "WK1000",
     extrnlCodeStr: "AP0202A_HrlyPWR",
     hrsFloat: "7.83",
     qtyFloat: "",
@@ -121,6 +133,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    empIDStr: "WK1007",
     extrnlCodeStr: "AP0301A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -131,6 +144,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    empIDStr: "WK1013",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.7",
     qtyFloat: "",
@@ -141,6 +155,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    empIDStr: "WK1013",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "7.3",
     qtyFloat: "",
@@ -151,6 +166,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    empIDStr: "WK1012",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -161,6 +177,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    empIDStr: "WK1009",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -171,6 +188,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    empIDStr: "WK1009",
     extrnlCodeStr: "IN_PWO",
     hrsFloat: "0.9",
     qtyFloat: "",
@@ -181,6 +199,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.3",
     qtyFloat: "",
@@ -191,6 +210,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.14",
     qtyFloat: "",
@@ -201,6 +221,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "AP0201A_HrlyPWR",
     hrsFloat: "7.56",
     qtyFloat: "",
@@ -211,6 +232,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    empIDStr: "WK1015",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -221,6 +243,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.93",
     qtyFloat: "",
@@ -231,6 +254,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "1.95",
     qtyFloat: "",
@@ -241,6 +265,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.62",
     qtyFloat: "",
@@ -251,6 +276,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "2.25",
     qtyFloat: "",
@@ -261,6 +287,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.27",
     qtyFloat: "",
@@ -271,6 +298,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "1.98",
     qtyFloat: "",
@@ -281,6 +309,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -291,6 +320,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.1",
     qtyFloat: "",
@@ -301,6 +331,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "7.9",
     qtyFloat: "",
@@ -311,6 +342,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    empIDStr: "WK1004",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -321,6 +353,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "OT - Overtime",
     hrsFloat: "0.01",
     qtyFloat: "",
@@ -331,6 +364,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.12",
     qtyFloat: "",
@@ -341,6 +375,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "4.05",
     qtyFloat: "",
@@ -351,6 +386,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "3.83",
     qtyFloat: "",
@@ -361,6 +397,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    empIDStr: "WK1000",
     extrnlCodeStr: "AP0202A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -371,6 +408,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.07",
     qtyFloat: "",
@@ -381,6 +419,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.11",
     qtyFloat: "",
@@ -391,6 +430,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "2.08",
     qtyFloat: "",
@@ -401,6 +441,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.96",
     qtyFloat: "",
@@ -411,6 +452,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "1.41",
     qtyFloat: "",
@@ -421,6 +463,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.42",
     qtyFloat: "",
@@ -431,6 +474,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "2.29",
     qtyFloat: "",
@@ -441,6 +485,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.21",
     qtyFloat: "",
@@ -451,6 +496,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "0.45",
     qtyFloat: "",
@@ -461,6 +507,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    empIDStr: "WK1005",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.71",
     qtyFloat: "",
@@ -471,6 +518,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    empIDStr: "WK1005",
     extrnlCodeStr: "AP0102B_HrlyPWR",
     hrsFloat: "7.29",
     qtyFloat: "",
@@ -481,6 +529,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    empIDStr: "WK1007",
     extrnlCodeStr: "AP0301A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -491,6 +540,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    empIDStr: "WK1013",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -501,6 +551,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    empIDStr: "WK1012",
     extrnlCodeStr: "AP0102B_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -511,6 +562,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Andrew Lloyd Hedenland (WK1011)",
+    empIDStr: "WK1011",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -521,6 +573,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    empIDStr: "WK1009",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -531,6 +584,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.28",
     qtyFloat: "",
@@ -541,6 +595,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.14",
     qtyFloat: "",
@@ -551,6 +606,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "AP0201A_HrlyPWR",
     hrsFloat: "7.58",
     qtyFloat: "",
@@ -561,6 +617,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    empIDStr: "WK1015",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "4.75",
     qtyFloat: "",
@@ -571,6 +628,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    empIDStr: "WK1015",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "3.25",
     qtyFloat: "",
@@ -581,6 +639,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jamie Andres Godoy (WK1006)",
+    empIDStr: "WK1006",
     extrnlCodeStr: "IW_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -591,6 +650,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "8",
     qtyFloat: "",
@@ -601,6 +661,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.28",
     qtyFloat: "",
@@ -611,6 +672,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.14",
     qtyFloat: "",
@@ -621,6 +683,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "7.58",
     qtyFloat: "",
@@ -631,6 +694,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -641,6 +705,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    empIDStr: "WK1004",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.18",
     qtyFloat: "",
@@ -651,6 +716,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    empIDStr: "WK1004",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "7.82",
     qtyFloat: "",
@@ -661,6 +727,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "8",
     qtyFloat: "",
@@ -671,6 +738,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "8",
     qtyFloat: "",
@@ -681,6 +749,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    empIDStr: "WK1005",
     extrnlCodeStr: "AP0102B_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -691,6 +760,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    empIDStr: "WK1007",
     extrnlCodeStr: "AP0301A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -701,6 +771,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    empIDStr: "WK1013",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -711,6 +782,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    empIDStr: "WK1012",
     extrnlCodeStr: "HOL - Holiday",
     hrsFloat: "8",
     qtyFloat: "",
@@ -721,6 +793,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Aidan Tyler Kenny (WK1012)",
+    empIDStr: "WK1012",
     extrnlCodeStr: "AP0102B_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -731,6 +804,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Andrew Lloyd Hedenland (WK1011)",
+    empIDStr: "WK1011",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -741,6 +815,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Charles Lee Hall IV (WK1009)",
+    empIDStr: "WK1009",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -751,6 +826,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Christopher Lee Coffelt (WK1003)",
+    empIDStr: "WK1003",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -761,6 +837,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dan Reno Soucy (WK1014)",
+    empIDStr: "WK1014",
     extrnlCodeStr: "AP0201A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -771,6 +848,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Dion Lamont Stroughter (WK1015)",
+    empIDStr: "WK1015",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -781,6 +859,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jamie Andres Godoy (WK1006)",
+    empIDStr: "WK1006",
     extrnlCodeStr: "IW_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -791,6 +870,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jarett Oliver Wilkins (WK1018)",
+    empIDStr: "WK1018",
     extrnlCodeStr: "VAC - Vacation",
     hrsFloat: "8",
     qtyFloat: "",
@@ -801,6 +881,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Jason Turner Hanley (WK1010)",
+    empIDStr: "WK1010",
     extrnlCodeStr: "SICK",
     hrsFloat: "8",
     qtyFloat: "",
@@ -811,6 +892,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "0.09",
     qtyFloat: "",
@@ -821,6 +903,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "John Edward Carson (WK1002)",
+    empIDStr: "WK1002",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "7.91",
     qtyFloat: "",
@@ -831,6 +914,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    empIDStr: "WK1004",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "1.23",
     qtyFloat: "",
@@ -841,6 +925,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Joshua Norman Carter Coffelt (WK1004)",
+    empIDStr: "WK1004",
     extrnlCodeStr: "IN_PWR",
     hrsFloat: "6.77",
     qtyFloat: "",
@@ -851,6 +936,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "2.34",
     qtyFloat: "",
@@ -861,6 +947,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "0.75",
     qtyFloat: "",
@@ -871,6 +958,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "OT - Overtime",
     hrsFloat: "0.01",
     qtyFloat: "",
@@ -881,6 +969,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Michael Stepens Braaten (WK1001)",
+    empIDStr: "WK1001",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "4.91",
     qtyFloat: "",
@@ -891,6 +980,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Phosay Bouaphavong (WK1000)",
+    empIDStr: "WK1000",
     extrnlCodeStr: "AP0202A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -901,6 +991,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Scott Daniel Tope (WK1016)",
+    empIDStr: "WK1016",
     extrnlCodeStr: "REG - Regular",
     hrsFloat: "8",
     qtyFloat: "",
@@ -911,6 +1002,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Shawn Martin Crowe (WK1005)",
+    empIDStr: "WK1005",
     extrnlCodeStr: "AP0102B_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -921,6 +1013,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Tyler Alexander Grine (WK1007)",
+    empIDStr: "WK1007",
     extrnlCodeStr: "AP0301A_HrlyPWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -931,6 +1024,7 @@ const latestPrdDetailsExportArry=[
   },
   {
     empFullNameStr: "Yongthong Lanh Saiyarath (WK1013)",
+    empIDStr: "WK1013",
     extrnlCodeStr: "Tech_PWR",
     hrsFloat: "8",
     qtyFloat: "",
@@ -939,15 +1033,5 @@ const latestPrdDetailsExportArry=[
     dateStr: "11/10/25",
     stateStr: "CA"
   },
-  {
-    empFullNameStr: "",
-    extrnlCodeStr: "",
-    hrsFloat: "463.92",
-    qtyFloat: "",
-    taxCodeStr: "",
-    bpNameStr: "",
-    dateStr: "",
-    stateStr: ""
-  }
 ]
 export default latestPrdDetailsExportArry;

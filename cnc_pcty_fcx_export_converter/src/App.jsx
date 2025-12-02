@@ -5,8 +5,55 @@ import latestBPListArry from "./csStaticRefs/latestBPList";
 import latestPrdDetailsExportArry from "./csStaticRefs/latestPrdDetailsExport";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const arrysArryToRender=[];
+  const createArryToRndrFrmStaticRefsFn=()=>{
+    for(let i=0;i<latestPrdDetailsExportArry.length;i++){
+      let thisRowTableArry=[];
+      let thisArryItemObj=latestPrdDetailsExportArry[i];
+      thisRowTableArry.push(thisArryItemObj.empFullNameStr);
+      thisRowTableArry.push(thisArryItemObj.empIDStr);
+      thisRowTableArry.push(`E`);
+      let thisFCXPRollItemCodeStr=thisArryItemObj.extrnlCodeStr;
+      thisRowTableArry.push(thisFCXPRollItemCodeStr);
+      let payCodeMapObjsWThisFCXCodeArry=intrnlToExtrnlCodeMapArry.filter(thisPayCodeMapObj=>thisPayCodeMapObj.fcxIntrnlCodeWNameStr===thisFCXPRollItemCodeStr);
+      let thisMatchedPayCodeMapObj=payCodeMapObjsWThisFCXCodeArry[0];
+      let thisPCTYCodeStrForThisFCXCode=thisMatchedPayCodeMapObj.pctyExtrnlCodeStr;
+      let thisPaycodeReqFringeBool=thisMatchedPayCodeMapObj.reqFringeBool;
+      thisRowTableArry.push(thisPCTYCodeStrForThisFCXCode);
+      let hrsFloatThisTblRow=Number(thisArryItemObj.hrsFloat);
+      let qtyFloatThisTblRow=Number(thisArryItemObj.qtyFloat);
+      let qtyThisRowFloat=!hrsFloatThisTblRow?qtyFloatThisTblRow?qtyFloatThisTblRow:0.00:hrsFloatThisTblRow;
+      thisRowTableArry.push(qtyThisRowFloat);
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push(thisArryItemObj.taxCodeStr);
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      let thisTblRowBPNameStr=thisArryItemObj.bpNameStr;
+      thisRowTableArry.push(thisTblRowBPNameStr);
+      let thisBPMtchngObjsArry=latestBPListArry.filter(thisBPObj=>thisBPObj.bpNameStr===thisTblRowBPNameStr);
+      let thisBPMtchngObj=thisBPMtchngObjsArry[0];
+      let thisBPNumInt=Number(thisBPMtchngObj.bpNumStr);
+      thisRowTableArry.push(thisBPNumInt);
+      thisRowTableArry.push("");
+      thisRowTableArry.push(thisArryItemObj.dateStr);
+      thisRowTableArry.push(thisArryItemObj.dateStr);
+      thisRowTableArry.push("");
+      thisRowTableArry.push(thisArryItemObj.stateStr);
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      thisRowTableArry.push("");
+      arrysArryToRender.push(thisRowTableArry);
+    }
+    console.log(arrysArryToRender)
+  }
+createArryToRndrFrmStaticRefsFn()
   return (
     <table>
       <thead>
@@ -203,238 +250,17 @@ function App() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        {arrysArryToRender.map((thisTblRowArry)=>{
+          return(
+            <tr>
+              {thisTblRowArry.map((thisTblRowCellValVar)=>{
+                return(
+                  <td>{thisTblRowCellValVar}</td>
+                )
+              })}
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   );
