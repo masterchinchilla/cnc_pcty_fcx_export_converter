@@ -1350,7 +1350,9 @@ const intrnlToExtrnlCodeMapArry=[
     reqFringeBool: "TRUE"
   },
   {
-    fcxIntrnlCodeWNameStr: ""
+    fcxIntrnlCodeWNameStr: "",
+    pctyExtrnlCodeStr: "",
+    reqFringeBool: ""
   }
 ]
 export default intrnlToExtrnlCodeMapArry;

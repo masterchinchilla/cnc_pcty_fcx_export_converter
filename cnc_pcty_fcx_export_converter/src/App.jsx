@@ -1,17 +1,79 @@
 import { useState } from "react";
 import {cloneDeep} from "lodash";
+import * as XLSX from 'xlsx'; // Import the library
 import './index.css';
 import intrnlToExtrnlCodeMapArry from "./csStaticRefs/intrnlToExtrnlCodeMap";
-import latestBPListArry from "./csStaticRefs/latestBPList";
-import latestPrdDetailsExportArry from "./csStaticRefs/latestPrdDetailsExport";
 import fringeTypePerExtCodeMap from "./csStaticRefs/fringeTypePerExtCodeMap";
+import taxCodeCodesMap from "./csStaticRefs/taxCodeCodesMap";
+import prdDtlsTblHdrsArry from "./csStaticRefs/prdDtlsTblHdrsArry";
+import bpsListTblHdrsArry from "./csStaticRefs/bpsListTblHdrsArry";
 
 function App() {
-  const arrysArryToRender=[];
+  const [pRollDetailsTblStateArry,updtPRollDetailsTblStateArryFn]=useState([]);
+  const [bpsListTblStateArry,updtBpsListTblStateArryFn]=useState([]);
+  const [arrysToRenderStateArry,updtArrysToRenderStateArryFn]=useState([]);
+  const handlePeriodDetailsFileImportFn = (event) => {
+    const file = event.target.files[0]; // Get the uploaded file
+    if (file) {
+      const reader = new FileReader(); // Use FileReader to access file content
+      reader.onload = (e) => {
+        const binaryString = e.target.result;
+        const workbook = XLSX.read(binaryString, { type: 'binary' }); // Parse the binary data
+        // Get the first worksheet name
+        const sheetName = workbook.SheetNames[0]; 
+        const worksheet = workbook.Sheets[sheetName];
+        // Convert the worksheet data to a JSON array of objects
+        const prdDtlsTblArrysArry = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+        const prdDtlsRowObjsArry=[];
+        for(let i=0;i<prdDtlsTblArrysArry.length;i++){
+          let thisPrdDtlsTblRowArry=prdDtlsTblArrysArry[i];
+          let thisPrdDtlsTblRowObj={};
+          for(let j=0;j<thisPrdDtlsTblRowArry.length;j++){
+            let thisTblRowCellValVar=thisPrdDtlsTblRowArry[j];
+            let thisTblColHdrStr=prdDtlsTblHdrsArry[j];
+            thisPrdDtlsTblRowObj[thisTblColHdrStr]=thisTblRowCellValVar;
+          }
+          prdDtlsRowObjsArry.push(thisPrdDtlsTblRowObj);
+        }
+        updtPRollDetailsTblStateArryFn(prdDtlsRowObjsArry); // Update the state with the new data
+      };
+      reader.readAsBinaryString(file); // Read the file as a binary string
+    }
+  }
+  const handleBPsListFileImportFn = (event) => {
+    const file = event.target.files[0]; // Get the uploaded file
+    if (file) {
+      const reader = new FileReader(); // Use FileReader to access file content
+      reader.onload = (e) => {
+        const binaryString = e.target.result;
+        const workbook = XLSX.read(binaryString, { type: 'binary' }); // Parse the binary data
+        // Get the first worksheet name
+        const sheetName = workbook.SheetNames[0]; 
+        const worksheet = workbook.Sheets[sheetName];
+        // Convert the worksheet data to a JSON array of objects
+        const bpsTblArrysArry = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+        const bpsTblRowObjsArry=[];
+        for(let i=0;i<bpsTblArrysArry.length;i++){
+          let thisBpsTblRowArry=bpsTblArrysArry[i];
+          let thisBpsTblRowObj={};
+          for(let j=0;j<thisBpsTblRowArry.length;j++){
+            let thisTblRowCellValVar=thisBpsTblRowArry[j];
+            let thisTblColHdrStr=bpsListTblHdrsArry[j];
+            thisBpsTblRowObj[thisTblColHdrStr]=thisTblRowCellValVar;
+          }
+          bpsTblRowObjsArry.push(thisBpsTblRowObj);
+        }
+        updtBpsListTblStateArryFn(bpsTblRowObjsArry); // Update the state with the new data
+      };
+      reader.readAsBinaryString(file); // Read the file as a binary string
+    }
+  }
+  
   const createArryToRndrFrmStaticRefsFn=()=>{
-    for(let i=0;i<latestPrdDetailsExportArry.length;i++){
+    const newArrysArryToRender=[];
+    for(let i=0;i<pRollDetailsTblStateArry.length;i++){
       let thisRowTableArry=[];
-      let thisArryItemObj=latestPrdDetailsExportArry[i];
+      let thisArryItemObj=pRollDetailsTblStateArry[i];
       thisRowTableArry.push(thisArryItemObj.empFullNameStr);
       thisRowTableArry.push(thisArryItemObj.empIDStr);
       thisRowTableArry.push(`E`);
@@ -22,26 +84,43 @@ function App() {
       let thisExtnlCodeStrForThisFCXCode=thisMatchedPayCodeMapObj.pctyExtrnlCodeStr;
       thisRowTableArry.push(thisExtnlCodeStrForThisFCXCode);
       let hrsFloatThisTblRow=Number(thisArryItemObj.hrsFloat);
-      let qtyFloatThisTblRow=Number(thisArryItemObj.qtyFloat);
+      let qtyValVarThisTblRow=thisArryItemObj.qtyFloat;
+      let qtyFloatThisTblRow=0;
+      if(qtyValVarThisTblRow){
+        qtyFloatThisTblRow=Number(thisArryItemObj.qtyFloat);
+      }
       let qtyThisRowFloat=!hrsFloatThisTblRow?qtyFloatThisTblRow?qtyFloatThisTblRow:0.00:hrsFloatThisTblRow;
       thisRowTableArry.push(qtyThisRowFloat);
       thisRowTableArry.push("");
       thisRowTableArry.push("");
       thisRowTableArry.push("");
       thisRowTableArry.push("");
-      thisRowTableArry.push(thisArryItemObj.taxCodeStr);
+      let thisRowTaxCodeNameStr=thisArryItemObj.taxCodeStr;
+      let thisTaxCodeCodeStr="";
+      if(thisRowTaxCodeNameStr){
+        let thisTaxCodeObjMtchsArry=taxCodeCodesMap.filter(taxCodeObj=>taxCodeObj.name===thisRowTaxCodeNameStr);
+        let thisTaxCodeObj=thisTaxCodeObjMtchsArry[0];
+        thisTaxCodeCodeStr=thisTaxCodeObj.code;
+      }
+      thisRowTableArry.push(thisTaxCodeCodeStr);
       thisRowTableArry.push("");
       thisRowTableArry.push("");
       thisRowTableArry.push("");
       let thisTblRowBPNameStr=thisArryItemObj.bpNameStr;
       thisRowTableArry.push(thisTblRowBPNameStr);
-      let thisBPMtchngObjsArry=latestBPListArry.filter(thisBPObj=>thisBPObj.bpNameStr===thisTblRowBPNameStr);
+      let thisBPMtchngObjsArry=bpsListTblStateArry.filter(thisBPObj=>thisBPObj.bpNameStr===thisTblRowBPNameStr);
       let thisBPMtchngObj=thisBPMtchngObjsArry[0];
       let thisBPNumInt=Number(thisBPMtchngObj.bpNumStr);
       thisRowTableArry.push(thisBPNumInt);
       thisRowTableArry.push("");
-      thisRowTableArry.push(thisArryItemObj.dateStr);
-      thisRowTableArry.push(thisArryItemObj.dateStr);
+      let thisTblRowDateUTCStr=thisArryItemObj.dateStr;
+      let parsedDateTimeStr=new Date(thisTblRowDateUTCStr);
+      let mm = String(parsedDateTimeStr.getMonth() + 1).padStart(2, '0');
+      let dd = String(parsedDateTimeStr.getDate()).padStart(2, '0');
+      let yyyy = parsedDateTimeStr.getFullYear();
+      let dateToDisplayStr=`${mm}/${dd}/${yyyy}`
+      thisRowTableArry.push(dateToDisplayStr);
+      thisRowTableArry.push(dateToDisplayStr);
       thisRowTableArry.push("");
       thisRowTableArry.push(thisArryItemObj.stateStr);
       thisRowTableArry.push("");
@@ -50,25 +129,47 @@ function App() {
       thisRowTableArry.push("");
       thisRowTableArry.push("");
       thisRowTableArry.push("");
-      arrysArryToRender.push(thisRowTableArry);
+      newArrysArryToRender.push(thisRowTableArry);
       let thisPaycodeReqFringeBool=thisMatchedPayCodeMapObj.reqFringeBool==="TRUE";
       if(thisPaycodeReqFringeBool){
         let copyOfOrigRowTblArryForFringe=cloneDeep(thisRowTableArry);
         let frngCodeForThisExtrnlCode=fringeTypePerExtCodeMap[thisExtnlCodeStrForThisFCXCode];
         copyOfOrigRowTblArryForFringe[3]=frngCodeForThisExtrnlCode;
         copyOfOrigRowTblArryForFringe[4]=frngCodeForThisExtrnlCode;
-        arrysArryToRender.push(copyOfOrigRowTblArryForFringe);
+        newArrysArryToRender.push(copyOfOrigRowTblArryForFringe);
         let copyOfOrigRowTblArryForTC=cloneDeep(thisRowTableArry);
         copyOfOrigRowTblArryForTC[2]=`D`;
         copyOfOrigRowTblArryForTC[3]=`TC`;
         copyOfOrigRowTblArryForTC[4]=`TC`;
-        arrysArryToRender.push(copyOfOrigRowTblArryForTC);
+        newArrysArryToRender.push(copyOfOrigRowTblArryForTC);
       }
+      updtArrysToRenderStateArryFn(newArrysArryToRender);
     }
   }
-createArryToRndrFrmStaticRefsFn()
   return (
     <div>
+      <div className={`formGroup`}>
+        <label>Import Payroll Details File:</label>
+        <input 
+          type="file" 
+          accept=".xlsx, .xls" // Restrict file types to Excel formats
+          onChange={handlePeriodDetailsFileImportFn}
+        />
+      </div>
+      <div className={`formGroup`}>
+        <label>Import Build Plans List File:</label>
+        <input 
+          type="file" 
+          accept=".xlsx, .xls" // Restrict file types to Excel formats
+          onChange={handleBPsListFileImportFn}
+        />
+      </div>
+      <button
+        disabled={pRollDetailsTblStateArry.length<1||bpsListTblStateArry.length<1}
+        onClick={createArryToRndrFrmStaticRefsFn}
+      >
+        Calculate
+      </button>
       <table>
         <thead>
           <tr key={`theadRow1`}>
@@ -154,7 +255,7 @@ createArryToRndrFrmStaticRefsFn()
           </tr>
         </thead>
         <tbody>
-          {arrysArryToRender.map((thisTblRowArry,index1)=>{
+          {arrysToRenderStateArry.map((thisTblRowArry,index1)=>{
             let thisRowsExtrnlCodeStr=thisTblRowArry[4];
             let thisRowIsFringeBool=false;
             let thisRowIsTCBool=false;
