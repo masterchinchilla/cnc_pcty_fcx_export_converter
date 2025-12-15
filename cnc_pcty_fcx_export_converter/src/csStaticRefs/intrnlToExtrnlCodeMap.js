@@ -1350,6 +1350,46 @@ const intrnlToExtrnlCodeMapArry=[
     reqFringeBool: "TRUE"
   },
   {
+    fcxIntrnlCodeWNameStr: "MILE - Mileage Driven over 35 Miles",
+    pctyExtrnlCodeStr: "MILE",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "PDPW - Per Diem PW ($75 per Day)",
+    pctyExtrnlCodeStr: "PDPW",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "T3645 - Travel Time Reimb 36-45 Miles",
+    pctyExtrnlCodeStr: "T3645",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "T4655 - Travel Time Reimb 46-55 Miles",
+    pctyExtrnlCodeStr: "T4655",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "T5665 - Travel Time Reimb 56-65 Miles",
+    pctyExtrnlCodeStr: "T5665",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "T65 - Travel Time Reimb Over 65",
+    pctyExtrnlCodeStr: "T65",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "VAC - Vacation",
+    pctyExtrnlCodeStr: "VAC",
+    reqFringeBool: "FALSE"
+  },
+  {
+    fcxIntrnlCodeWNameStr: "MWTRN - Minimum Wage Training",
+    pctyExtrnlCodeStr: "MWTRN",
+    reqFringeBool: "FALSE"
+  },
+  {
     fcxIntrnlCodeWNameStr: "",
     pctyExtrnlCodeStr: "",
     reqFringeBool: ""

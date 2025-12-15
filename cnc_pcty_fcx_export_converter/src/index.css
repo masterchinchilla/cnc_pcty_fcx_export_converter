@@ -58,3 +58,6 @@ button{
   width:10rem;
   margin:0 0 1rem 0.25rem;
 }
+.boldText{
+  font-weight: bolder;
+}
