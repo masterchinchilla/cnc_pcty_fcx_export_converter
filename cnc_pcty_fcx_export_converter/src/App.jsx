@@ -195,14 +195,13 @@ function App() {
             Export Prep for PCTY"
           </li>
           <li><span className={`boldText`}>{`Important: `}</span>You MUST toggle-open the "Employee" columns group to reveal the Emp ID column BEFORE you export or that column will be left out of the export!</li>
+          <li>{`When you click the "Export to Excel" button you will see the option to choose between "EXCEL" (xlsx) and "CSV" - Choose EXCEL`}</li>
+          <li>There are also 2 checkboxes: "Skip Column Group Headers" and "Skip Column Headers" - Check both of these</li>
           <li>
-            When you export from FCX there will be 2 header rows - Remove these
+            When you export from FCX there will be a sum total row at the bottom of the table - remove
+            this row
           </li>
-          <li>
-            There is also a sum total row at the bottom of the table - remove
-            this row too
-          </li>
-          <li>The file can stay XSLX - Save and import</li>
+          <li>The file can stay XSLX - Save and import it into this app</li>
         </ul>
         <div className={`formGroup`}>
           <label>Import Payroll Details File:</label>
@@ -231,10 +230,9 @@ function App() {
             now-closed BP
           </li>
           <li>
-            When you export from FCX there will be 2 header rows like there were
-            with the Period Details - Remove these rows
+            {`When you export from FCX you will once again be asked to choose file format and whether you want to exclude group and column headers - Make the same choices as you did above for the Period Details`}
           </li>
-          <li>The file can stay XSLX - Save and import</li>
+          <li>The file can stay XSLX - Save and import to this app</li>
         </ul>
         <div className={`formGroup`}>
           <label>Import Build Plans List File:</label>
