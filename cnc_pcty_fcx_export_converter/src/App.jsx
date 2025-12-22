@@ -96,15 +96,15 @@ function App() {
       console.log(thisArryItemObj)
       thisRowTableArry.push(thisArryItemObj.empFullNameStr);
       thisRowTableArry.push(thisArryItemObj.empIDStr);
-      thisRowTableArry.push(`E`);
       let thisFCXPRollItemCodeStr = thisArryItemObj.extrnlCodeStr;
-      console.log(thisFCXPRollItemCodeStr)
-      thisRowTableArry.push(thisFCXPRollItemCodeStr);
       let payCodeMapObjsWThisFCXCodeArry = intrnlToExtrnlCodeMapArry.filter(
         (thisPayCodeMapObj) =>
           thisPayCodeMapObj.fcxIntrnlCodeWNameStr === thisFCXPRollItemCodeStr
       );
       let thisMatchedPayCodeMapObj = payCodeMapObjsWThisFCXCodeArry[0];
+      let thiseOrDTypeStrForThisFCXCode=thisMatchedPayCodeMapObj.eOrDTypeStr;
+      thisRowTableArry.push(thiseOrDTypeStrForThisFCXCode);
+      thisRowTableArry.push(thisFCXPRollItemCodeStr);
       let thisExtnlCodeStrForThisFCXCode =
         thisMatchedPayCodeMapObj.pctyExtrnlCodeStr;
       thisRowTableArry.push(thisExtnlCodeStrForThisFCXCode);

@@ -2,1392 +2,1683 @@ const intrnlToExtrnlCodeMapArry=[
   {
     fcxIntrnlCodeWNameStr: "REG - Regular",
     pctyExtrnlCodeStr: "REG",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "OT - Overtime",
     pctyExtrnlCodeStr: "OT",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "DT - Doubletime",
     pctyExtrnlCodeStr: "DT",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "VAC - Vacation",
     pctyExtrnlCodeStr: "VAC",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "SICK",
     pctyExtrnlCodeStr: "SICK",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "HOL - Holiday",
     pctyExtrnlCodeStr: "HOL",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "FRING - Fringe Regular",
     pctyExtrnlCodeStr: "FRING",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "FRNGO - Fringe Overtime",
     pctyExtrnlCodeStr: "FRNGO",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "FRNGD - Fringe Double-Time",
     pctyExtrnlCodeStr: "FRNGD",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0101B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0102B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0201B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0202B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0301B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "AP0302C_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IN_PWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "Tech_PWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW_PWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0101B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0102B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0201B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0202B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0301B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302A_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302B_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWR",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWO",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWD",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWR_S2",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWO_S2",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWD_S2",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWR_S3",
     pctyExtrnlCodeStr: "BHR",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWO_S3",
     pctyExtrnlCodeStr: "BHRO",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "IW0302C_HrlyPWD_S3",
     pctyExtrnlCodeStr: "BHRD",
-    reqFringeBool: "TRUE"
+    reqFringeBool: "TRUE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "MILE - Mileage Driven over 35 Miles",
     pctyExtrnlCodeStr: "MILE",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "PDPW - Per Diem PW ($75 per Day)",
     pctyExtrnlCodeStr: "PDPW",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
+  },
+  {
+    fcxIntrnlCodeWNameStr: "PDNPW - Per Diem Non-PW ($25 per Day)",
+    pctyExtrnlCodeStr: "PDNPW",
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
+  },
+  {
+    fcxIntrnlCodeWNameStr: "PDPWH - Per Diem PW Incl Hotel ($300)",
+    pctyExtrnlCodeStr: "PDPWH",
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "T3645 - Travel Time Reimb 36-45 Miles",
     pctyExtrnlCodeStr: "T3645",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "T4655 - Travel Time Reimb 46-55 Miles",
     pctyExtrnlCodeStr: "T4655",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "T5665 - Travel Time Reimb 56-65 Miles",
     pctyExtrnlCodeStr: "T5665",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "T65 - Travel Time Reimb Over 65",
     pctyExtrnlCodeStr: "T65",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`D`,
   },
   {
     fcxIntrnlCodeWNameStr: "VAC - Vacation",
     pctyExtrnlCodeStr: "VAC",
-    reqFringeBool: "FALSE"
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "MWTRN - Minimum Wage Training",
     pctyExtrnlCodeStr: "MWTRN",
     reqFringeBool: "FALSE"
+    ,
+    eOrDTypeStr:`E`,
   },
   {
     fcxIntrnlCodeWNameStr: "",
