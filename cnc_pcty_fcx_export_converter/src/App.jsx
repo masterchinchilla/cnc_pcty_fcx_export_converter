@@ -172,11 +172,12 @@ function App() {
         copyOfOrigRowTblArryForFringe[3] = frngCodeForThisExtrnlCode;
         copyOfOrigRowTblArryForFringe[4] = frngCodeForThisExtrnlCode;
         newArrysArryToRender.push(copyOfOrigRowTblArryForFringe);
-        let copyOfOrigRowTblArryForTC = cloneDeep(thisRowTableArry);
-        copyOfOrigRowTblArryForTC[2] = `D`;
-        copyOfOrigRowTblArryForTC[3] = `TC`;
-        copyOfOrigRowTblArryForTC[4] = `TC`;
-        newArrysArryToRender.push(copyOfOrigRowTblArryForTC);
+        // On 1/5/26 CNC asked us to remove the TC from the import entirely
+        // let copyOfOrigRowTblArryForTC = cloneDeep(thisRowTableArry);
+        // copyOfOrigRowTblArryForTC[2] = `D`;
+        // copyOfOrigRowTblArryForTC[3] = `TC`;
+        // copyOfOrigRowTblArryForTC[4] = `TC`;
+        // newArrysArryToRender.push(copyOfOrigRowTblArryForTC);
       }
       updtArrysToRenderStateArryFn(newArrysArryToRender);
     }
