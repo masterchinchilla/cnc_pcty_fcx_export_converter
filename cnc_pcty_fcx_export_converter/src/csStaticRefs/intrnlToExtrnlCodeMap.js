@@ -1676,8 +1676,13 @@ const intrnlToExtrnlCodeMapArry=[
   {
     fcxIntrnlCodeWNameStr: "MWTRN - Minimum Wage Training",
     pctyExtrnlCodeStr: "MWTRN",
-    reqFringeBool: "FALSE"
-    ,
+    reqFringeBool: "FALSE",
+    eOrDTypeStr:`E`,
+  },
+  {
+    fcxIntrnlCodeWNameStr: "SALRY - Salary",
+    pctyExtrnlCodeStr: "SALRY",
+    reqFringeBool: "FALSE",
     eOrDTypeStr:`E`,
   },
   {

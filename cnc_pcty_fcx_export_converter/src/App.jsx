@@ -22,7 +22,7 @@ import bpsListTblHdrsArry from "./csStaticRefs/bpsListTblHdrsArry";
 
 function App() {
   const [pRollDetailsTblStateArry, updtPRollDetailsTblStateArryFn] = useState(
-    []
+    [],
   );
   const [bpsListTblStateArry, updtBpsListTblStateArryFn] = useState([]);
   const [arrysToRenderStateArry, updtArrysToRenderStateArryFn] = useState([]);
@@ -43,7 +43,7 @@ function App() {
         const prdDtlsRowObjsArry = [];
         for (let i = 0; i < prdDtlsTblArrysArry.length; i++) {
           let thisPrdDtlsTblRowArry = prdDtlsTblArrysArry[i];
-          console.log(thisPrdDtlsTblRowArry)
+          console.log(thisPrdDtlsTblRowArry);
           let thisPrdDtlsTblRowObj = {};
           for (let j = 0; j < thisPrdDtlsTblRowArry.length; j++) {
             let thisTblRowCellValVar = thisPrdDtlsTblRowArry[j];
@@ -93,16 +93,15 @@ function App() {
     for (let i = 0; i < pRollDetailsTblStateArry.length; i++) {
       let thisRowTableArry = [];
       let thisArryItemObj = pRollDetailsTblStateArry[i];
-      console.log(thisArryItemObj)
       thisRowTableArry.push(thisArryItemObj.empFullNameStr);
       thisRowTableArry.push(thisArryItemObj.empIDStr);
       let thisFCXPRollItemCodeStr = thisArryItemObj.extrnlCodeStr;
       let payCodeMapObjsWThisFCXCodeArry = intrnlToExtrnlCodeMapArry.filter(
         (thisPayCodeMapObj) =>
-          thisPayCodeMapObj.fcxIntrnlCodeWNameStr === thisFCXPRollItemCodeStr
+          thisPayCodeMapObj.fcxIntrnlCodeWNameStr === thisFCXPRollItemCodeStr,
       );
       let thisMatchedPayCodeMapObj = payCodeMapObjsWThisFCXCodeArry[0];
-      let thiseOrDTypeStrForThisFCXCode=thisMatchedPayCodeMapObj.eOrDTypeStr;
+      let thiseOrDTypeStrForThisFCXCode = thisMatchedPayCodeMapObj.eOrDTypeStr;
       thisRowTableArry.push(thiseOrDTypeStrForThisFCXCode);
       thisRowTableArry.push(thisFCXPRollItemCodeStr);
       let thisExtnlCodeStrForThisFCXCode =
@@ -128,7 +127,7 @@ function App() {
       let thisTaxCodeCodeStr = "";
       if (thisRowTaxCodeNameStr) {
         let thisTaxCodeObjMtchsArry = taxCodeCodesMap.filter(
-          (taxCodeObj) => taxCodeObj.name === thisRowTaxCodeNameStr
+          (taxCodeObj) => taxCodeObj.name === thisRowTaxCodeNameStr,
         );
         let thisTaxCodeObj = thisTaxCodeObjMtchsArry[0];
         thisTaxCodeCodeStr = thisTaxCodeObj.code;
@@ -140,7 +139,7 @@ function App() {
       let thisTblRowBPNameStr = thisArryItemObj.bpNameStr;
       thisRowTableArry.push(thisTblRowBPNameStr);
       let thisBPMtchngObjsArry = bpsListTblStateArry.filter(
-        (thisBPObj) => thisBPObj.bpNameStr === thisTblRowBPNameStr
+        (thisBPObj) => thisBPObj.bpNameStr === thisTblRowBPNameStr,
       );
       let thisBPMtchngObj = thisBPMtchngObjsArry[0];
       let thisBPNumInt = Number(thisBPMtchngObj.bpNumStr);
@@ -195,12 +194,19 @@ function App() {
             Go to the Period Details in FCX and switch to the Saved View "CNC
             Export Prep for PCTY"
           </li>
-          <li><span className={`boldText`}>{`Important: `}</span>You MUST toggle-open the "Employee" columns group to reveal the Emp ID column BEFORE you export or that column will be left out of the export!</li>
-          <li>{`When you click the "Export to Excel" button you will see the option to choose between "EXCEL" (xlsx) and "CSV" - Choose EXCEL`}</li>
-          <li>There are also 2 checkboxes: "Skip Column Group Headers" and "Skip Column Headers" - Check both of these</li>
           <li>
-            When you export from FCX there will be a sum total row at the bottom of the table - remove
-            this row
+            <span className={`boldText`}>{`Important: `}</span>You MUST
+            toggle-open the "Employee" columns group to reveal the Emp ID column
+            BEFORE you export or that column will be left out of the export!
+          </li>
+          <li>{`When you click the "Export to Excel" button you will see the option to choose between "EXCEL" (xlsx) and "CSV" - Choose EXCEL`}</li>
+          <li>
+            There are also 2 checkboxes: "Skip Column Group Headers" and "Skip
+            Column Headers" - Check both of these
+          </li>
+          <li>
+            When you export from FCX there will be a sum total row at the bottom
+            of the table - remove this row
           </li>
           <li>The file can stay XSLX - Save and import it into this app</li>
         </ul>
