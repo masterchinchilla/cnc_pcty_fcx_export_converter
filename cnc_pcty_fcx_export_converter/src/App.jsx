@@ -93,6 +93,7 @@ function App() {
     for (let i = 0; i < pRollDetailsTblStateArry.length; i++) {
       let thisRowTableArry = [];
       let thisArryItemObj = pRollDetailsTblStateArry[i];
+      console.log(thisArryItemObj);
       thisRowTableArry.push(thisArryItemObj.empFullNameStr);
       thisRowTableArry.push(thisArryItemObj.empIDStr);
       let thisFCXPRollItemCodeStr = thisArryItemObj.extrnlCodeStr;
@@ -145,12 +146,16 @@ function App() {
       let thisBPNumInt = Number(thisBPMtchngObj.bpNumStr);
       thisRowTableArry.push(thisBPNumInt);
       thisRowTableArry.push("");
-      let thisTblRowDateUTCStr = thisArryItemObj.dateStr;
-      let parsedDateTimeStr = new Date(thisTblRowDateUTCStr);
-      let mm = String(parsedDateTimeStr.getMonth() + 1).padStart(2, "0");
-      let dd = String(parsedDateTimeStr.getDate()).padStart(2, "0");
-      let yyyy = parsedDateTimeStr.getFullYear();
-      let dateToDisplayStr = `${mm}/${dd}/${yyyy}`;
+      let thisTblRowDateYMDStr = thisArryItemObj.dateStr;
+      let [yyyy, mm, dd] = thisTblRowDateYMDStr.split("-");
+      let dateToDisplayStr = `${mm}-${dd}-${yyyy}`;
+      //replaced the below with the above 1/13/26 because dev team changed how the period details report is exported to Excel to not be in the same format as it was before
+      // let thisTblRowDateUTCStr = thisArryItemObj.dateStr;
+      // let parsedDateTimeStr = new Date(thisTblRowDateUTCStr);
+      // let mm = String(parsedDateTimeStr.getMonth() + 1).padStart(2, "0");
+      // let dd = String(parsedDateTimeStr.getDate()).padStart(2, "0");
+      // let yyyy = parsedDateTimeStr.getFullYear();
+      // let dateToDisplayStr = `${mm}/${dd}/${yyyy}`;
       thisRowTableArry.push(dateToDisplayStr);
       thisRowTableArry.push(dateToDisplayStr);
       thisRowTableArry.push("");
